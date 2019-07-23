@@ -21,6 +21,14 @@ domain = localhost
 sleep_time = 10
 ```
 
+## Usage
+The endpoint `/cert` accepts a url string parameter on a GET request for the `domain` value.
+
+```
+curl http://localhost/api/v1/cert/josh_domain.com
+"foo-josh_domain.com"
+```
+
 ## Tasks
 - [x] properly handles certificates for different domain
   * Domain is a url string parameter.
